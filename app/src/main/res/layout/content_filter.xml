@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="codepathbootcamp.nytimesearch.activities.FilterActivity"
+    tools:showIn="@layout/activity_filter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/beginDateText"
+        android:text="@string/beginDateText"
+        android:textColor="@color/settingTextColor"
+        android:paddingRight="100dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:id="@+id/dateEditText"
+        android:layout_toRightOf="@+id/beginDateText"
+        android:hint="Pick the Date..."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sortOrderText"
+        android:text="@string/sortOrderText"
+        android:textColor="@color/settingTextColor"
+        android:paddingRight="100dp"
+        android:paddingTop="50dp"
+        android:layout_below="@+id/beginDateText"
+        />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sortOrderText"
+        android:layout_below="@+id/dateEditText"
+        android:id="@+id/sortOrderSpinner"
+        android:paddingTop="50dp">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsDeskText"
+        android:text="@string/NewsDeskText"
+        android:textColor="@color/settingTextColor"
+        android:paddingRight="30dp"
+        android:paddingTop="100dp"
+        android:layout_below="@id/sortOrderText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortOrderSpinner"
+        android:layout_toRightOf="@id/newsDeskText"
+        android:paddingTop="100dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artsCbox"
+            android:layout_below="@+id/sortOrderSpinner"
+            android:text="@string/Arts"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fashionCbox"
+            android:layout_below="@+id/sortOrderSpinner"
+            android:text="@string/FashionSytle"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sportsCBox"
+            android:layout_below="@+id/sortOrderSpinner"
+            android:text="@string/Sports"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

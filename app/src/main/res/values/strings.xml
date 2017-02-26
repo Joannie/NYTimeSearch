@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NYTimeSearch</string>
+    <string name="action_settings">Settings</string>
+    <string name="searchBtnText">SEARCH</string>
+    <string name="searchBarHint">Search...</string>
+    <string name="title_activity_article">ArticleActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="beginDateText">Begin Date</string>
+    <string name="sortOrderText">Sort Order</string>
+    <string name="NewsDeskText">News Desk Values</string>
+    <string name="Arts">Arts</string>
+    <string name="FashionSytle">Fashion &amp; Style</string>
+    <string name="Sports">Sports</string>
+
+    <string-array name="sortItemsText">
+        <item>Newest</item>
+        <item>Oldest</item>
+    </string-array>
+</resources>
